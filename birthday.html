@@ -1,0 +1,243 @@
+<!--
+  举头望涵涵，低头思第一。
+  主页由张运鹏制作。
+  本页面只要此页即可。
+-->
+<!DOCTYPE html>
+<!-- saved from url=(0020)https://dffzmxj.com/ -->
+<html lang="zh_CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- 网页信息配置。 -->
+  
+  <meta name="author" content="张运鹏">
+  <meta name="description" content="想知道这个页面有什么就进来看呀~">
+  <meta name="keywords" content="张运鹏,生日快乐！">
+  <meta name="viewport" content="width=device-width">
+  <title>随手用HTML制作一张生日卡片</title>
+  <!-- 搜索引擎验证 -->
+  <meta name="google-site-verification" content="yoigfLAK1jiGk2woTau9PMfvKgQWTgHk0gEwVeKqXRQ">
+        <!-- 浏览器小图标 -->
+  <link rel="shortcut icon" href="https://q2.qlogo.cn/headimg_dl?dst_uin=2477819731&amp;spec=640">
+   
+  <!-- CSS -->
+  <!-- MDUI CSS -->
+  <link rel="stylesheet" href="https://blogs.dffzmxj.com/usr/themes/notDefault/others/mdui/css/mdui.min.css">
+  <!-- 主题CSS -->
+  <link rel="stylesheet" href="https://blogs.dffzmxj.com/usr/themes/notDefault/others/css/style.css">
+  <!-- Font Awesome -->
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+ 
+  <!-- JS -->
+  <!-- MDUI JS -->
+  <script src="https://blogs.dffzmxj.com/usr/themes/notDefault/others/mdui/js/mdui.min.js"></script>
+
+  <style>
+    .footer {
+      /*页脚样式，仿Google页脚*/
+      line-height: 40px;
+      background: #f2f2f2;
+      border-top: 1px solid #e4e4e4;
+      font-size: 10pt;
+      color: #222;
+    }
+
+    .footer text,
+    .footer a {
+      /*页脚链接和文字*/
+      margin-left: 30px;
+      color: #666;
+      display: inline-block;
+      line-height: 40px;
+      font-family: sans-serif;
+      font-size: 10pt;
+      margin-right: 30px;
+      text-decoration: none;
+    }
+
+    .footer>a:visited {
+      color: #609;
+    }
+
+    #banner {
+      /*横幅宽高和背景壁纸*/
+      background-image: url(https://thegoddessforum.com/storage/attachment/2020/06/25/LBhDWFpJwEGKKI5c_thumb.png);
+        height: 50vh;
+      width: 100%;
+    }
+
+    .banner-title {
+      font-weight: 400;
+    }
+
+    .content-view {
+      padding-top: 64px;
+    }
+
+    /*body{
+          background-color: #f1f1f1;
+        }*/
+
+    .no-title-weight {
+      font-weight: 400;
+    }
+
+    .mdui-list-item-icon,
+    .mdui-list-item-content {
+      color: rgba(0, 0, 0, 0.54);
+    }
+
+    .happy-birthday {
+      width: 100%;
+      height: 80vh;
+      background-image: url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1528634936883&di=c93da104058cf00cec0a3950fadd6ecc&imgtype=0&src=http%3A%2F%2Fpic.90sjimg.com%2Fdesign%2F01%2F23%2F00%2F43%2Fs_1024_58c263b57da57.png);
+    }
+
+    .happy-birthday p {
+      display: block;
+    }
+
+    div[exam] {
+      height: 50vh;
+      background: rgba(23, 23, 23, 0.06);
+    }
+
+    ::selection {
+      background-color: pink;
+    }
+    /*Material Design新版的Banner，来自https://codepen.io/dffzmxj/pen/LYVooPR，抄袭Vuetify样式*/
+    .new-banner{
+        position: sticky;
+        top: 0;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+        padding: 16px 8px 16px 16px;
+        align-items: center;
+        display: flex;
+    }
+    .new-banner>.banner__icon{
+        margin-right: 16px;
+        flex: 0 0 auto;
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        overflow: hidden;
+        line-height: 40px;
+        text-align: center;
+        border-radius: 50%;
+    }
+    .new-banner>p{
+        flex: 1 1 auto;
+        margin-left: 8px;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-right: 0;
+        line-height: 20px;
+    }
+    .new-banner>.banner__actions{
+        margin-left: 90px;
+        display: inline-flex;
+        align-items: center;
+        align-self: flex-end;
+        justify-content: flex-end;
+        margin-bottom: -8px;
+    }
+    /*单行Banner*/
+    .new-banner.single-line{
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+    .new-banner.single-line{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .new-banner.single-line>.banner__actions{
+        margin-bottom: 0;
+        align-self: center;
+    }
+    /*使桌面端persistent*/
+    @media screen and (max-width: 600px){
+        .new-banner{
+            position: relative;
+        }
+    }
+  </style>
+</head>
+
+<body class="mdui-theme-primary-teal mdui-theme-accent-pink mdui-loaded">
+  <header id="appbar" class="mdui-appbar mdui-appbar-fixed">
+    <!-- 页面顶部加载条 -->
+    <div class="mdui-progress mdui-hidden" id="preloader">
+      <div class="mdui-progress-indeterminate"></div>
+    </div>
+    <!-- 导航栏 -->
+    <div class="mdui-toolbar mdui-color-theme">
+      <div class="mdui-typo-title" id="appbar-title">噢，什么鬼</div>
+      <div class="mdui-toolbar-spacer"></div>
+    </div>
+  </header>
+  <nav id="banner" class="mdui-container-fluid mdui-valign">
+    <h2 class="banner-title mdui-center mdui-text-color-theme">
+     少壮不努力，老大写作业。
+    </h2>
+  </nav>
+
+  <div id="shadow-line">
+    <!-- 当浏览器划过此处时，自动给导航栏加入阴影 -->
+  </div>
+  <!-- 庆祝涵涵的生日 -->
+  <div class="mdui-container-fluid" id="happy-birthday">
+    <div class="mdui-row">
+      <div class="happy-birthday mdui-col-xs-12 mdui-row">
+        <div class="mdui-row">
+          <div class="mdui-col-xs-12 mdui-valign">
+            <p class="mdui-center mdui-typo-display-1"><span class="mdui-text-color-blue">生</span><span class="mdui-text-color-red">日</span><span class="mdui-text-color-yellow">快</span><span class="mdui-text-color-blue">乐</span><span class="mdui-text-color-green">，运</span><span class="mdui-text-color-red">鹏！</span></p>
+          </div>
+          <div class="mdui-col-xs-12 mdui-valign">
+            <p class="mdui-center mdui-typo-title-opacity">知道吗？<abbr mdui-tooltip="{content:&#39;6月12日&#39;}">今天</abbr>是你的生日。希望你今天过得开心。永远和快乐做伴！</p>
+          </div>
+          <div class="mdui-col-xs-12 mdui-hidden-md-up">
+            <i class="mdui-center mdui-icon material-icons mdui-text-color-amber mdui-typo-display-2">cake</i>
+          </div>
+          <div class="mdui-col-xs-12 mdui-hidden-md-up">
+            <div class="mdui-center mdui-text-center mdui-text-color-amber mdui-typo-display-1">
+              6月25日
+            </div>
+          </div>
+          <div class="mdui-col-xs-6 mdui-hidden-sm-down">
+            <i class="mdui-float-right mdui-p-r-2 mdui-icon material-icons mdui-text-color-amber mdui-typo-display-2">cake</i>
+          </div>
+          <div class="mdui-col-xs-6 mdui-hidden-sm-down">
+            <div class="mdui-float-left mdui-p-l-2 mdui-text-color-amber mdui-typo-display-1">
+              6月25日
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<main class="content-view mdui-container">
+    <!--尬聊-->
+    <div class="mdui-card">
+      <div class="mdui-card-primary">
+        <div class="mdui-card-primary-title">因为他是世界上最帅气、最善良、最聪明、最666的人生日...</div>
+        <div class="mdui-card-primary-subtitle">张运鹏</div>
+      </div>
+      <div class="mdui-card-content mdui-typo">
+        <h2>张运鹏是谁？能吃吗？好吃吗？</h2>
+        <p>
+          本站的站长。能吃，不好吃，而且一生只能吃一次。
+        </p>
+        <h2><del>举办庆生在哪里？</del>(举办结束)</h2>
+        <p><del>地点就在学校的商业街的冰城蜜雪，而时间就定在晚上八点开始吧。到场的人都可以任意选一杯奶茶（凭此页面作为邀请函），我请你哦。</del></p>
+      </div>
+  <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="https://music.163.com/outchain/player?type=2&id=5279993&auto=1&height=66"></iframe>
+  </main>
+  <footer class="footer">
+    <!-- 页脚信息 -->
+    <text>©2020张运鹏拥有所有版权。</text>
+  </footer>
+  <!-- 隐藏的页面组件，如音乐播放器、网站统计。 -->
+  <div id="hidden" class="mdui-invisible"></div>
+
+  <!-- 页面内JavaScript文件 -->
+
+
+</body></html>
